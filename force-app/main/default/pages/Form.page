@@ -1,0 +1,11 @@
+<apex:page showHeader="false" sidebar="false" >
+    <apex:includeLightning />
+    <div id="form-container"></div>
+    <script>
+        $Lightning.use('c:FormApp', function () {
+            $Lightning.createComponent('c:Form', {}, 'form-container', function(component) {
+                console.log('Hosted!');
+            });
+        });
+    </script>
+</apex:page>
